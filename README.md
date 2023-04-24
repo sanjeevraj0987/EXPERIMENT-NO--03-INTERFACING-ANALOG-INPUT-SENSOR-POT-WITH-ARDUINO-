@@ -67,11 +67,61 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
+```
+int potPin= A5;
+int ledPin= 2;
+
+void setup()
+{
+  pinMode (potPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+  
+}
+
+void loop()
+{
+ int potMesure = analogRead(A5);
+  Serial.print("Sensor Value: ");
+  Serial.println(potMesure);
+  if (potMesure>=650)
+  {
+    digitalWrite(2, HIGH);
+  }
+  else
+    digitalWrite(2, LOW);
+  
+  
+}
  
 
+int potPin= A5;
+int ledPin= 2;
 
+void setup()
+{
+  pinMode (potPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+  
+}
 
+void loop()
+{
+ int potMesure = analogRead(A5);
+  Serial.print("Sensor Value: ");
+  Serial.println(potMesure);
+  if (potMesure>=650)
+  {
+    digitalWrite(2, HIGH);
+  }
+  else
+    digitalWrite(2, LOW);
+  
+  
+}
 
+```
 
 
 
@@ -82,10 +132,9 @@ CIRCUIT DIAGRAM
 **
 
 
-[My image](username.github.com/repository/img/image.jpg)
+![Screenshot (15)](https://user-images.githubusercontent.com/120698946/234006850-634207dc-3203-47d3-a235-ee99103ee8d4.png)
 
-
-
+![Screenshot (14)](https://user-images.githubusercontent.com/120698946/234007199-bb329ef7-dc15-4652-abd7-d226891a8a20.png)
 
 
 
